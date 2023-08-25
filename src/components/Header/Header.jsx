@@ -7,7 +7,7 @@ import './Head.css';
 export default function Header() {
   return (
     <header >
-      <h1>Erik Olson</h1>
+      <h1 className='header-title'>Erik Olson</h1>
       <Navigation />
     </header>
   )

@@ -12,15 +12,15 @@ function Navigation() {
             to="/"
             className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
           >
-            About
+            <span className="nav-link-text">About</span>
           </Link>
         </li>
         <li className="nav-item">
           <Link
-            to="/Projects"
-            className={currentPage === '/Projects' ? 'nav-link active' : 'nav-link'}
+            to="/Portfolio"
+            className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
           >
-            Projects
+            <span className="nav-link-text">Portfolio</span>
           </Link>
         </li>
         <li className="nav-item">
@@ -28,7 +28,7 @@ function Navigation() {
             to="/Resume"
             className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
           >
-            Resume
+            <span className="nav-link-text">Resume</span>
           </Link>
         </li>
         <li className="nav-item">
@@ -36,7 +36,7 @@ function Navigation() {
             to="/Contact"
             className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
           >
-            Contact
+            <span className="nav-link-text">Contact</span>
           </Link>
         </li>
       </ul>
