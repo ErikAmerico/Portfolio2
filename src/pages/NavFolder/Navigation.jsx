@@ -1,16 +1,21 @@
-
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import './Nav.css';
 
 function Navigation() {
   const currentPage = useLocation().pathname;
+  const [expanded, setExpanded] = useState(false);
+
+  const handleSelect = () => {
+    setExpanded(false);
+  };
 
   return (
-    <Navbar expand="md" variant="light" bg="light" className='nav nav-tabs navbar'>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
+    <Navbar expand="md" variant="light" bg="light" className='nav nav-tabs navbar' expanded={expanded}>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)}/>
+      <Navbar.Collapse id="basic-navbar-nav" >
+        <Nav className="mr-auto" onClick={handleSelect}>
           <Nav.Link
             as={Link}
             to="/"
