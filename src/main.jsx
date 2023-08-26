@@ -4,11 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 
 import App from './App.jsx';
-import About from './components/About/About.jsx';
-import Contact from './components/Contact/Contact.jsx';
-import Portfolio from './components/Portfolio/Portfolio.jsx';
-import Resume from './components/Resume/Resume.jsx';
-import Error from './components/Error/Error.jsx';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact.jsx';
+import Portfolio from './pages/Portfolio/Portfolio.jsx';
+import Resume from './pages/Resume/Resume.jsx';
+import Error from './pages/Error/Error.jsx';
 
 
 const router = createBrowserRouter([

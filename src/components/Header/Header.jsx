@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
-import Navigation from '../NavFolder/Navigation.jsx';
+import Navigation from '../../pages/NavFolder/Navigation';
+
 import './Head.css';
 
 const initialName = 'Erik Olson';
@@ -17,7 +18,7 @@ export default function Header() {
 
 
   return (
-    <header >
+    <header className='header'>
       <h1 className='header-title' onClick={handleClick}>{name}</h1>
       <Navigation />
     </header>

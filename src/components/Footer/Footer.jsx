@@ -3,7 +3,7 @@ import './foot.css'
 export default function Footer() {
     return (
         <footer>
-        <p>© 2021 My Website</p>
+        <p>© 2023 My Website</p>
         </footer>
     )
 }

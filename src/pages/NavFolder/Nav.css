@@ -1,4 +1,7 @@
-
+/* 
+.navbar {
+  background-color: #f1faee;
+} */
 
 .nav-link {
   color: #457b9d;
@@ -10,6 +13,11 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+
+.navbar-toggler-icon {
+  background-color: #f1faee;
+}
+
 .nav-link-text:hover {
   text-shadow: 2px 2px 4px #f1faee;
   display: inline-block;
@@ -18,6 +26,18 @@
 
 .nav-link.active .nav-link-text {
   animation: none;
+}
+
+.navbar-collapse {
+  max-height: calc(100vh - 78px);
+  transition: max-height 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 78px;
+  }
 }
 
 @keyframes navPulse {
