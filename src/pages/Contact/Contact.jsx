@@ -96,7 +96,7 @@ export default function Contact() {
             <Form.Group>
                 <Form.Label>Name:</Form.Label>
                 <OverlayTrigger
-                    placement='right'
+                    placement='top'
                     show={!!validationErrors.name}
                     overlay={<Tooltip className='tooltipContent'>{validationErrors.name}</Tooltip>}
                 > 
@@ -116,7 +116,7 @@ export default function Contact() {
             <Form.Group>
                 <Form.Label>Email address:</Form.Label>
                 <OverlayTrigger
-                    placement='right'
+                    placement='top'
                     show={!!validationErrors.email}
                     overlay={<Tooltip className='tooltipContent'>{validationErrors.email}</Tooltip>}
                 >
@@ -136,7 +136,7 @@ export default function Contact() {
             <Form.Group>
                 <Form.Label>Message:</Form.Label>
                 <OverlayTrigger
-                    placement='right'
+                    placement='top'
                     show={!!validationErrors.message}
                     overlay={<Tooltip className='tooltipContent'>{validationErrors.message}</Tooltip>}
                 >
