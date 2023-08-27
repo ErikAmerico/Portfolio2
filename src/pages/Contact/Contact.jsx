@@ -1,5 +1,5 @@
 
-
+import './Contact.css';
 import { useState } from 'react';
 import { Form, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
@@ -86,15 +86,19 @@ export default function Contact() {
 
 
     return (
-        <section>
-            <h1>Contact Me</h1>
+        <>
+        <div className='container'>
+        <div className='row'>
+        <img src='images/letMeKnow.png' alt="Avatar Calling" className='col-12 col-md-6 content' id='letMeKnow' />
+        <section id='contactSection' className='col-12 col-md-6 content'>
+            <h1 id='contactMeTitle'>Contact Me</h1>
             <Form onSubmit={handleSubmit}>
             <Form.Group>
                 <Form.Label>Name:</Form.Label>
                 <OverlayTrigger
                     placement='right'
                     show={!!validationErrors.name}
-                    overlay={<Tooltip>{validationErrors.name}</Tooltip>}
+                    overlay={<Tooltip className='tooltipContent'>{validationErrors.name}</Tooltip>}
                 > 
                 <Form.Control
                     type='text'
@@ -114,7 +118,7 @@ export default function Contact() {
                 <OverlayTrigger
                     placement='right'
                     show={!!validationErrors.email}
-                    overlay={<Tooltip>{validationErrors.email}</Tooltip>}
+                    overlay={<Tooltip className='tooltipContent'>{validationErrors.email}</Tooltip>}
                 >
                 <Form.Control
                     type='email'
@@ -134,7 +138,7 @@ export default function Contact() {
                 <OverlayTrigger
                     placement='right'
                     show={!!validationErrors.message}
-                    overlay={<Tooltip>{validationErrors.message}</Tooltip>}
+                    overlay={<Tooltip className='tooltipContent'>{validationErrors.message}</Tooltip>}
                 >
                 <Form.Control
                     as='textarea'
@@ -154,5 +158,8 @@ export default function Contact() {
                 <Button type="submit">Submit</Button>
             </Form>
         </section>
+        </div>
+        </div>
+        </>
     );
 }
