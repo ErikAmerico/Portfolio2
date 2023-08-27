@@ -37,24 +37,30 @@
     margin-top: 60px;
   }
 
+  .control-dots {
+    bottom: -10px !important;
+  }
   @media (min-width: 768px) {
     #mobileTextContainer {
       display: none;
     }
   }
 
+  /* Might be able to delete mobiletextcontainer(not margin bottom), laptopwave, mobileP, if it turns out that the text container is responsive enough. */
   @media (max-width: 768px) {
     #textContainer {
       display: none;
     }
-
-    /* #mobileTextContainer {
-      width: 80%;
+    #mobileTextContainer {
+      width: 330px;
+      margin-bottom: 80px;
     }
     #laptopWaveImage {
-      width: 80%;
-    } */
-
+      width: 350px;
+    }
+    .mobileP {
+      font-size: .9em;
+    }
   }
   
 
