@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import Navigation from '../../pages/NavFolder/Navigation';
+import Navigation from '../../components/NavFolder/Navigation';
 
 import './Head.css';
 

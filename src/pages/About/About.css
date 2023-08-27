@@ -47,7 +47,7 @@
     }
   }
 
-  /* Might be able to delete mobiletextcontainer(not margin bottom), laptopwave, mobileP, if it turns out that the text container is responsive enough. */
+  /* Might be able to delete mobiletextcontainer, laptopwave, mobileP, if it turns out that the text container is responsive enough. */
   @media (max-width: 768px) {
     #textContainer {
       display: none;

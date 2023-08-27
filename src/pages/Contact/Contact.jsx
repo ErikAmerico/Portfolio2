@@ -20,9 +20,9 @@ export default function Contact() {
         }
 
         if (!email.trim()) {
-            errors.email = 'Email address is required';
+            errors.email = 'Email Address is required';
         } else if (!/\S+@\S+\.\S+/.test(email)) {
-            errors.email = 'Invalid email address format';
+            errors.email = 'Invalid Email Address format';
         }
 
         if (!message.trim()) {
@@ -45,7 +45,7 @@ export default function Contact() {
         } else if (!/\S+@\S+\.\S+/.test(e.target.value)) {
                 setValidationErrors((prevErrors) => ({
                     ...prevErrors,
-                    email: 'Invalid email address format',
+                    email: 'Invalid Email Address format',
              }));
         } else {
             setValidationErrors((prevErrors) => ({
@@ -114,7 +114,7 @@ export default function Contact() {
             </Form.Group>
 
             <Form.Group>
-                <Form.Label>Email address:</Form.Label>
+                <Form.Label>Email Address:</Form.Label>
                 <OverlayTrigger
                     placement='top'
                     show={!!validationErrors.email}
