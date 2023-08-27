@@ -16,6 +16,7 @@
     background-color: #a8dadc;
     border-radius: 15px;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 1);
+    margin-bottom: 80px;
   }
 
 
@@ -53,7 +54,6 @@
     }
     #mobileTextContainer {
       width: 330px;
-      margin-bottom: 80px;
     }
     #laptopWaveImage {
       width: 350px;
