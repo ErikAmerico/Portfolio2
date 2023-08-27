@@ -1,7 +1,7 @@
 
 
 import { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 export default function Contact() {
     const [name, setName] = useState('');
@@ -91,6 +91,11 @@ export default function Contact() {
             <Form onSubmit={handleSubmit}>
             <Form.Group>
                 <Form.Label>Name:</Form.Label>
+                <OverlayTrigger
+                    placement='right'
+                    show={!!validationErrors.name}
+                    overlay={<Tooltip>{validationErrors.name}</Tooltip>}
+                > 
                 <Form.Control
                     type='text'
                     name='name'
@@ -100,16 +105,17 @@ export default function Contact() {
                         validateName(e)
                     }}
                     onBlur= {validateName}
-                    isInvalid={validationErrors.name}
-                    isValid={name && !validationErrors.name}
                 />
-                <Form.Control.Feedback type="invalid">
-                    {validationErrors.name}
-                </Form.Control.Feedback>
+                </OverlayTrigger>
             </Form.Group>
 
             <Form.Group>
                 <Form.Label>Email address:</Form.Label>
+                <OverlayTrigger
+                    placement='right'
+                    show={!!validationErrors.email}
+                    overlay={<Tooltip>{validationErrors.email}</Tooltip>}
+                >
                 <Form.Control
                     type='email'
                     name='email'
@@ -119,16 +125,17 @@ export default function Contact() {
                         validateEmail(e)
                     }}
                     onBlur= {validateEmail}
-                    isInvalid={validationErrors.email}
-                    isValid={email && !validationErrors.email}
                 />
-                <Form.Control.Feedback type="invalid">
-                    {validationErrors.email}
-                </Form.Control.Feedback>
+                </OverlayTrigger>
             </Form.Group>
 
             <Form.Group>
                 <Form.Label>Message:</Form.Label>
+                <OverlayTrigger
+                    placement='right'
+                    show={!!validationErrors.message}
+                    overlay={<Tooltip>{validationErrors.message}</Tooltip>}
+                >
                 <Form.Control
                     as='textarea'
                     name='message'
@@ -139,12 +146,8 @@ export default function Contact() {
                         validateMessage(e)
                     }}
                     onBlur= {validateMessage}
-                    isInvalid={validationErrors.message}
-                    isValid={message && !validationErrors.message}
                 />
-                <Form.Control.Feedback type="invalid">
-                    {validationErrors.message}
-                </Form.Control.Feedback>
+                </OverlayTrigger>
             </Form.Group>
 
 
