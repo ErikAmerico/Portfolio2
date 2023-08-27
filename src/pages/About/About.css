@@ -57,6 +57,7 @@
     }
     #laptopWaveImage {
       width: 350px;
+      margin-bottom: 0px;
     }
     .mobileP {
       font-size: .9em;
