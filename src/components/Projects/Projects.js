@@ -38,7 +38,7 @@ const Projects = [
           "A simple game of connecting opposite corners of a box with matching colors.",
         Image:
           "../images/boxmaze.png",
-        Site: "https://Boston.com",
+        Site: "https://boxmaze.netlify.app/",
       },
       {
         Title: "Text Editor",

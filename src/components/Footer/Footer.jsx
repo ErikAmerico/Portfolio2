@@ -1,4 +1,4 @@
-import './foot.css'
+import './Foot.css'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 
