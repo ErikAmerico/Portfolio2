@@ -1,13 +1,17 @@
 
 import Project from "../../components/Projects/Project";
+import "./Portfolio.css";
 
 
 export default function Portfolio() {
     return (
-        <section>
-            <h1>Portfolio</h1>
+        <>
+        <h1 id="portfolioTitle">Portfolio</h1>
+        <section id="projectPortfolioSection">
+            
             <Project />
 
         </section>
+        </>
     )
 }
