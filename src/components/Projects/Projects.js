@@ -5,7 +5,7 @@ const Projects = [
         Description:
           "An online adaption of the popular board game Roll Through The Ages.",
         Image:
-          "/images/rollthroughtheages.png",
+          "/images/rollThroughTheAges.png",
         Site: "https://peaceful-everglades-28565-b6ba6371ed9c.herokuapp.com/",
       },
       {
@@ -13,7 +13,7 @@ const Projects = [
         Description:
           "A website that allows you to keep track of your financials, view spending habits and plan for the future.",
         Image:
-          "/images/budgetplanner.png",
+          "/images/budgetPlanner.png",
         Site: "https://caffeinatedjitterbug.github.io/BudgetPlanner/",
       },
       {
