@@ -5,7 +5,7 @@ const Projects = [
         Description:
           "An online adaption of the popular board game Roll Through The Ages.",
         Image:
-          "../images/rollthroughtheages.png",
+          "/src/images/rollthroughtheages.png",
         Site: "https://peaceful-everglades-28565-b6ba6371ed9c.herokuapp.com/",
       },
       {
@@ -13,7 +13,7 @@ const Projects = [
         Description:
           "A website that allows you to keep track of your financials, view spending habits and plan for the future.",
         Image:
-          "../images/budgetplanner.png",
+          "/src/images/budgetplanner.png",
         Site: "https://caffeinatedjitterbug.github.io/BudgetPlanner/",
       },
       {
@@ -21,7 +21,7 @@ const Projects = [
         Description:
           "Enter a city to see the weather forecast for the upcoming week!",
         Image:
-          "../images/weatherApp.png",
+          "/src/images/weatherApp.png",
         Site: "https://erikamerico.github.io/Weather-Dashboard/",
       },
       {
@@ -29,7 +29,7 @@ const Projects = [
         Description:
           "A blog website to discuss all things tech.",
         Image:
-          "../images/techBlog.png",
+          "/src/images/techBlog.png",
         Site: "https://modelviewcontrollerblog-2239baa9f97c.herokuapp.com/",
       },
       {
@@ -37,7 +37,7 @@ const Projects = [
         Description:
           "A simple game of connecting opposite corners of a box with matching colors.",
         Image:
-          "../images/boxmaze.png",
+          "/src/images/boxmaze.png",
         Site: "https://boxmaze.netlify.app/",
       },
       {
@@ -45,7 +45,7 @@ const Projects = [
         Description:
           "Save and edit text files in your browser even when offline.",
         Image:
-          "../images/Jate.png",
+          "/src/images/Jate.png",
         Site: "https://olsonpwatexteditor-408ff5bc593e.herokuapp.com/",
       },
 ]

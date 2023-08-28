@@ -8,7 +8,7 @@ export default function About() {
     return (
         <div className='container' id='aboutContainer'>
             <div className="row">
-                <img src='images/laptopWave.png' alt="Avatar waving" className='col-12 col-lg-6 content' id='laptopWaveImage' />
+                <img src='/src/images/laptopWave.png' alt="Avatar waving" className='col-12 col-lg-6 content' id='laptopWaveImage' />
                 <div className='col-12 col-lg-6 content' id='textContainer'>
                     <h1 id='aboutMeTitle'>About Me</h1>
                     <p className='aboutMeP'>Hello! I&apos;m Erik Olson, a passionate individual with a diverse background and a drive for continuous learning. 
