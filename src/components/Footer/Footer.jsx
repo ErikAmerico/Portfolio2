@@ -22,10 +22,12 @@ export default function Footer() {
                     </IconContext.Provider>
                 </a>
                 <a href="https://www.linkedin.com/in/erik-olson-977513262/" target="_blank" rel="noopener noreferrer" id='linkedInIcon'>
-                    <FaLinkedin className="icon" />
+                    <IconContext.Provider value={{ className: 'icon' }}>
+                    <FaLinkedin />
+                    </IconContext.Provider>
                 </a>
                 <a href="https://twitter.com/KireNoslo" target="_blank" rel="noopener noreferrer" className='icon' id='twitterIcon'>
-                <IconContext.Provider>
+                <IconContext.Provider value={{}}>
                         {customTwitterIcon}
                     </IconContext.Provider>
                 </a>
