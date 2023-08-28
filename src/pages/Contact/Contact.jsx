@@ -89,7 +89,7 @@ export default function Contact() {
         <>
         <div className='container'>
         <div className='row'>
-        <img src='/src/images/letMeKnow.png' alt="Avatar Calling" className='col-12 col-md-6 content' id='letMeKnow' />
+        <img src='src/images/letMeKnow.png' alt="Avatar Calling" className='col-12 col-md-6 content' id='letMeKnow' />
         <section id='contactSection' className='col-12 col-md-6 content'>
             <h1 id='contactMeTitle'>Contact Me</h1>
             <Form onSubmit={handleSubmit}>
