@@ -7,6 +7,7 @@ const Projects = [
         Image:
           "/images/rollThroughTheAges.png",
         Site: "https://protected-reaches-31766-0c143902740e.herokuapp.com/",
+        GitHub: "https://github.com/corybenton/roll_through_the_ages",
       },
       {
         Title: "Budget Planner",
@@ -15,6 +16,7 @@ const Projects = [
         Image:
           "/images/budgetPlanner.png",
         Site: "https://caffeinatedjitterbug.github.io/BudgetPlanner/",
+        GitHub: "https://github.com/CaffeinatedJitterBug/BudgetPlanner",
       },
       {
         Title: "Weather Application",
@@ -23,6 +25,7 @@ const Projects = [
         Image:
           "/images/weatherApp.png",
         Site: "https://erikamerico.github.io/Weather-Dashboard/",
+        GitHub: "https://github.com/ErikAmerico/Weather-Dashboard",
       },
       {
         Title: "Tech Blog",
@@ -31,6 +34,7 @@ const Projects = [
         Image:
           "/images/techBlog.png",
         Site: "https://modelviewcontrollerblog-2239baa9f97c.herokuapp.com/",
+        GitHub: "https://github.com/ErikAmerico/MVC-TECH-BLOG",
       },
       {
         Title: "Box Maze",
@@ -39,6 +43,7 @@ const Projects = [
         Image:
           "/images/boxmaze.png",
         Site: "https://boxmaze.netlify.app/",
+        GitHub: "https://github.com/ErikAmerico/boxMaze",
       },
       {
         Title: "Text Editor",
@@ -47,9 +52,9 @@ const Projects = [
         Image:
           "/images/Jate.png",
         Site: "https://olsonpwatexteditor-408ff5bc593e.herokuapp.com/",
+        GitHub: "https://github.com/ErikAmerico/PWA-text-editor",
       },
 ]
-//
 
 
 

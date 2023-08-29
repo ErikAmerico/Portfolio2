@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { FaGithub } from 'react-icons/fa';
 
 export default function Project() {
     return (
@@ -17,9 +18,14 @@ export default function Project() {
                                 <Card.Text>
                                     {item.Description}
                                 </Card.Text>
-                                <Button variant='primary' href={item.Site}>
-                                    Take a look!
+                                <Button variant='primary' href={item.Site} id='projectButton' >
+                                    Check it out!
                                 </Button>
+                                <div className="mt-3">
+                                    <a href={item.GitHub} target="_blank" rel="noopener noreferrer">
+                                        <FaGithub className="github-icon2" />
+                                    </a>
+                                </div>                                
                             </Card.Body>
                         </Card>
                     </Col>
