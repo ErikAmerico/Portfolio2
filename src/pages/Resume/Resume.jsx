@@ -17,7 +17,7 @@ export default function Resume() {
         <div>
         <a href="/myResume.pdf" download="myResume.pdf" id='downloadResumeButton'>Download Resume</a>
         <div className="skills-table">
-                <h2>Skills</h2>
+                <h2>Proficiencies</h2>
                 <table>
                     <thead>
                         <tr>
