@@ -6,7 +6,7 @@ const Projects = [
           "An online adaption of the popular board game Roll Through The Ages.",
         Image:
           "/images/rollThroughTheAges.png",
-        Site: "https://peaceful-everglades-28565-b6ba6371ed9c.herokuapp.com/",
+        Site: "https://protected-reaches-31766-0c143902740e.herokuapp.com/",
       },
       {
         Title: "Budget Planner",
