@@ -18,18 +18,8 @@ export default function Resume() {
     <>
       <h1 id="resumeTitle">Resume</h1>
       <div>
-        {/* <a
-          href="/myResume.pdf"
-          //   target="_blank"
-          //   rel="noreferrer"
-          //   to="https://drive.google.com/file/d/1W9Sc7UhQglCVCld5wwjnGA5m6VzSJ6p3/view?usp=drive_link"
-          download="myResume.pdf"
-          id="downloadResumeButton"
-        >
-          Open Resume
-        </a> */}
         <Link
-          to="https://drive.google.com/file/d/1W9Sc7UhQglCVCld5wwjnGA5m6VzSJ6p3/view?usp=drive_link"
+          to="https://drive.google.com/file/d/1owflkv_h2XCHK7kM-f6ZLQf2vHZr7dhKGorgWmBIr08/view"
           target="_blank"
           rel="noreferrer"
         >
