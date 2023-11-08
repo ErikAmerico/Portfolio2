@@ -24,11 +24,11 @@ const Projects = [
     GitHub: "https://github.com/ErikAmerico/Weather-Dashboard",
   },
   {
-    Title: "Tech Blog",
-    Description: "A blog website to discuss all things tech.",
-    Image: "/images/techBlog.png",
-    Site: "https://modelviewcontrollerblog-2239baa9f97c.herokuapp.com/",
-    GitHub: "https://github.com/ErikAmerico/MVC-TECH-BLOG",
+    Title: "CompOnnect",
+    Description: "An internal social media site for employees to collaborate.",
+    Image: "/images/Componnect.png",
+    Site: "https://componnect-3a658d1d17cf.herokuapp.com/",
+    GitHub: "https://github.com/ErikAmerico/Employee-Website",
   },
   {
     Title: "Box Maze",
