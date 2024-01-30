@@ -13,7 +13,6 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
 .navbar-toggler-icon {
   background-color: #f1faee;
 }
@@ -41,7 +40,8 @@
 }
 
 @keyframes navPulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
