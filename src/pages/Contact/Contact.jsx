@@ -8,8 +8,11 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [validationErrors, setValidationErrors] = useState({});
 
+  const [buttonText, setButtonText] = useState("Submit");
+  const [buttonStyle, setButtonStyle] = useState("primary");
+
   function sendEmail() {
-    Email.send({
+    window.Email.send({
       Host: "smtp.elasticemail.com",
       Username: "erikamerico1991@gmail.com",
       Password: "8260D10173349FEC4C65A67C5850EC9A660E",
@@ -25,6 +28,17 @@ export default function Contact() {
         "<br>" +
         "Email: " +
         email,
+    }).then(() => {
+      setName("");
+      setEmail("");
+      setMessage("");
+      setButtonText("Submitted");
+      setButtonStyle("success");
+
+      setTimeout(() => {
+        setButtonText("Submit");
+        setButtonStyle("primary");
+      }, 3000);
     });
   }
 
@@ -188,7 +202,9 @@ export default function Contact() {
                 </OverlayTrigger>
               </Form.Group>
 
-              <Button type="submit">Submit</Button>
+              <Button type="submit" variant={buttonStyle}>
+                {buttonText}
+              </Button>
             </Form>
           </section>
         </div>
