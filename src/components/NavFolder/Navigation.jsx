@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
-import './Nav.css';
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
+import "./Nav.css";
 
 function Navigation() {
   const currentPage = useLocation().pathname;
@@ -12,14 +12,23 @@ function Navigation() {
   };
 
   return (
-    <Navbar expand="md" variant="light" bg="light" className='nav nav-tabs navbar' expanded={expanded}>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)}/>
-      <Navbar.Collapse id="basic-navbar-nav" >
+    <Navbar
+      expand="md"
+      variant="light"
+      bg="light"
+      className="nav nav-tabs navbar"
+      expanded={expanded}
+    >
+      <Navbar.Toggle
+        aria-controls="basic-navbar-nav"
+        onClick={() => setExpanded(!expanded)}
+      />
+      <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto" onClick={handleSelect}>
           <Nav.Link
             as={Link}
             to="/"
-            className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+            className={currentPage === "/" ? "nav-link active" : "nav-link"}
           >
             <span className="nav-link-text">About</span>
           </Nav.Link>
@@ -27,7 +36,7 @@ function Navigation() {
             as={Link}
             to="/Portfolio"
             className={
-              currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'
+              currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
             }
           >
             <span className="nav-link-text">Portfolio</span>
@@ -36,7 +45,7 @@ function Navigation() {
             as={Link}
             to="/Resume"
             className={
-              currentPage === '/Resume' ? 'nav-link active' : 'nav-link'
+              currentPage === "/Resume" ? "nav-link active" : "nav-link"
             }
           >
             <span className="nav-link-text">Resume</span>
@@ -45,7 +54,7 @@ function Navigation() {
             as={Link}
             to="/Contact"
             className={
-              currentPage === '/Contact' ? 'nav-link active' : 'nav-link'
+              currentPage === "/Contact" ? "nav-link active" : "nav-link"
             }
           >
             <span className="nav-link-text">Contact</span>
